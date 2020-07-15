@@ -14,12 +14,8 @@ rl.on('line', function (line) {
   const arrayA = input[0].split(' ').map((ele) => parseInt(ele));
   const arrayB = input[1].split(' ').map((ele) => parseInt(ele));
 
-  arrayA.sort();
+  arrayA.sort((a, b) => a - b);
   arrayB.sort((a, b) => b - a);
-
-  console.log(arrayA);
-  console.log(arrayB);
-
   let result = 0;
   for (let i = 0; i < arrayA.length; i++) {
     result += arrayA[i] * arrayB[i];
