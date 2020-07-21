@@ -24,15 +24,7 @@ var merge = function (nums1, m, nums2, n) {
   for (let i = nums2Idx; i < n; i++) {
     resultArray.push(nums2[nums2Idx++]);
   }
-  console.log(resultArray);
   for (let i = 0; i < nums1.length; i++) {
     nums1[i] = resultArray[i];
   }
-  console.log(nums1);
 };
-
-let nums1 = [1, 2, 3, 0, 0, 0],
-  m = 3;
-(nums2 = [2, 5, 6]), (n = 3);
-merge(nums1, m, nums2, n);
-console.log(nums1);
