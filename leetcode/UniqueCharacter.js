@@ -13,7 +13,7 @@ var firstUniqChar = function (s) {
   }
   for (const key in countObj) {
     if (countObj[key] === 1) {
-      return s.split('').indexOf(key);
+      return s.indexOf(key);
     }
   }
   return -1;

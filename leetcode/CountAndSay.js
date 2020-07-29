@@ -14,12 +14,10 @@ function countNum(str) {
   let result = '';
   let count = 0;
   for (let i = 0; i < str.length; i++) {
+    count += 1;
     if (str[i] !== str[i + 1]) {
-      count += 1;
       result += '' + count + str[i];
       count = 0;
-    } else {
-      count += 1;
     }
   }
   return result;
